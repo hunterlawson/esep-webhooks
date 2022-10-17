@@ -7,5 +7,5 @@ def lambda_handler(event, context):
     request_payload = {
         'text': request_text
     }
-    response = requests.post(request_url, data=request_payload)
+    response = requests.post(request_url, json=request_payload)
     return response.text
